@@ -2,7 +2,7 @@
 **Out:** November 13, 2023, at 09:00 am   
 **Due:** December 5, 2023, at 09:00 pm
 
-This project consists of writing a program that translates logical to physical addresses for a virtual address space of 
+This project consists of designing and implementing an Memory Management Unit that translates logical to physical addresses for a virtual address space of 
 size 2<sup>16</sup> = 65,536 bytes. Your program will read from a file containing logical addresses and, using a TLB and a page 
 table, translates each logical address to its corresponding physical address and output the value of the byte stored 
 at the translated physical address. Your learning goal is to use simulation to understand the steps involved in translating 
@@ -11,9 +11,8 @@ implementing a page-replacement algorithm.
 
 ### More Specifications   
 Your program will read a file containing several 32-bit integer numbers that represent logical addresses. However, 
-you need only be concerned with 16-bit addresses, so you must mask (i.e., ignore) the high-order 16 bits of each logical address. 
-The low-order 16 bits are divided into (1) an 8-bit page number and (2) an 8-bit page offset. Hence, the addresses are 
-structured as shown as:  
+you need to be only concerned about 16-bit addresses; so you must mask (i.e., ignore) the high-order 16 bits of each logical address. 
+The low-order 16 bits are divided into (1) an 8-bit page number and (2) an 8-bit page offset. Hence, the addresses are structured as shown as:  
 
 <!-- ![Virtual Address](./figs/address.png) -->
 <img src="./figs/address.png" alt="alt text" width="500">
